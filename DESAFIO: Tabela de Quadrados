@@ -2,24 +2,24 @@ import java.util.Scanner;
 
 public class DesafioQuadrados {
     public static void main(String[] args) {
-        // Cria um objeto Scanner para ler a entrada do usuário
+        
         Scanner scanner = new Scanner(System.in);
 
-        // Solicita o número limite ao usuário
+       
         System.out.print("Informe um número inteiro para ver a tabela de quadrados (Ex: 5): ");
         int limite = scanner.nextInt();
 
         System.out.println("--- Tabela de Quadrados de 1 até " + limite + " ---");
 
-        // Loop 'for' para iterar de 1 até o número limite
+        
         for (int i = 1; i <= limite; i++) {
-            // Calcula o quadrado: i * i (ou Math.pow(i, 2), mas i * i é mais simples para inteiros)
+           
             int quadrado = i * i;
-            // Imprime o resultado no formato N² = Resultado
+            
             System.out.println(i + "² = " + quadrado);
         }
 
-        // Fecha o objeto Scanner
+        
         scanner.close();
     }
 }
