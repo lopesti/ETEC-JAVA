@@ -3,8 +3,7 @@ public class AtividadeContagemRegressiva {
        
         int contador = 10;
 
-        // O bloco 'do' é executado primeiro
-        do {
+        {
             System.out.println(contador); 
             contador--;                   
         } while (contador >= 1); 
