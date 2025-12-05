@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class DesafioContadorDeNumeros {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        
+        int numeroInserido;
+        int contador = 0; 
+
+        System.out.println("--- Contador de Números ---");
+        System.out.println("Insira números inteiros. O programa para quando você digitar 0.");
+
+         {
+            System.out.print("Insira um número: ");
+            numeroInserido = scanner.nextInt();
+
+            
+            if (numeroInserido != 0) {
+                contador++;
+            }
+            
+        } while (numeroInserido != 0); 
+        
+        System.out.println("\n--- Fim da Inserção ---");
+        System.out.println("Você inseriu um total de " + contador + " números (diferentes de zero).");
+        
+        scanner.close();
+    }
+}
