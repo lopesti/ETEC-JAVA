@@ -4,38 +4,35 @@ public class DesafioDoisMaiores {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
-        // Variáveis para armazenar os dois maiores números
-        // Inicializadas com o menor valor possível (ou um valor que será facilmente substituído)
-        int maior1 = Integer.MIN_VALUE; // Armazena o maior número encontrado
-        int maior2 = Integer.MIN_VALUE; // Armazena o segundo maior número encontrado
         
-        // Variável de controle para o laço 'while'
+        int maior1 = Integer.MIN_VALUE; 
+        int maior2 = Integer.MIN_VALUE; 
+        
+        
         int contador = 1;
         int numero;
 
         System.out.println("Por favor, digite 10 números inteiros.");
 
-        // Loop 'while' para solicitar 10 números
+        
         while (contador <= 10) {
             System.out.print("Digite o " + contador + "º número: ");
             numero = scanner.nextInt();
 
-            // Lógica para atualizar o maior1 e o maior2
+            
             if (numero > maior1) {
-                // Se o novo número for maior que o maior atual (maior1),
-                // o antigo maior1 se torna o novo maior2, e o novo número se torna o maior1.
+                .
                 maior2 = maior1;
                 maior1 = numero;
             } else if (numero > maior2) {
-                // Se o novo número for menor ou igual ao maior1, mas maior que o maior2,
-                // ele se torna o novo maior2.
+               
                 maior2 = numero;
             }
             
-            contador++; // Incrementa o contador
+            contador++; 
         }
 
-        // Exibe os resultados
+        
         System.out.println("\n--- Resultado ---");
         System.out.println("O maior número digitado foi: " + maior1);
         System.out.println("O segundo maior número digitado foi: " + maior2);
