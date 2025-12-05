@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class AtividadeImprimirN {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita o número N ao usuário
+        System.out.print("Informe um número inteiro 'N': ");
+        int N = scanner.nextInt();
+
+        // Inicializa a variável de contagem
+        int numeroAtual = 1;
+
+        System.out.println("Números de 1 até " + N + ":");
+
+        // Loop 'while' que continua enquanto o número atual for menor ou igual a N
+        while (numeroAtual <= N) {
+            System.out.println(numeroAtual);
+            
+            numeroAtual++; // Incrementa o número para o próximo
+        }
+
+        scanner.close();
+    }
+}
