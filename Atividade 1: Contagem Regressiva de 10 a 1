@@ -1,0 +1,14 @@
+public class AtividadeContagemRegressiva {
+    public static void main(String[] args) {
+       
+        int contador = 10;
+
+        // O bloco 'do' é executado primeiro
+        do {
+            System.out.println(contador); 
+            contador--;                   
+        } while (contador >= 1); 
+
+        System.out.println("Lançamento!");
+    }
+}
