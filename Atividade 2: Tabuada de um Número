@@ -1,0 +1,27 @@
+Este programa solicita um número ao usuário (você precisará da classe Scanner para isso) e, em seguida, usa um laço for para calcular e imprimir a tabuada desse número (de 1 a 10).
+
+
+import java.util.Scanner;
+
+public class AtividadeTabuada {
+    public static void main(String[] args) {
+        // Cria um objeto Scanner para ler a entrada do usuário
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita o número ao usuário
+        System.out.print("Informe um número inteiro para ver a tabuada (de 1 a 10): ");
+        int numero = scanner.nextInt();
+
+        System.out.println("--- Tabuada do " + numero + " ---");
+
+        // Loop 'for' para calcular e imprimir a tabuada (multiplica de 1 a 10)
+        for (int i = 1; i <= 10; i++) {
+            int resultado = numero * i;
+            // Imprime o cálculo no formato N x i = Resultado
+            System.out.println(numero + " x " + i + " = " + resultado);
+        }
+
+        // Fecha o objeto Scanner
+        scanner.close();
+    }
+}
